@@ -1,7 +1,33 @@
-extends layouts/default_layout 
-
-block title 
-    title App name 
+extends layouts/empty_layout 
 
 block content 
-    .content content go here
+    section.grid-noGutter.section-home.flex-center 
+        .section-home__logo 
+            img(src="/images/home-byidmore-transparent.png" alt="idmore white transparent logo")
+            span.text Knowing is not enough, we must apply it. Willing is not enough, we must do.&nbsp;
+                small Johann Wolfgang von Goethe
+        .section-home__clouds
+
+    section.grid-noGutter.section-about.flex-center
+        h2.text-title-big.text-blue Who We Are
+        div(style="width:100%")
+            h3.align-center.text-medium-gray 
+                | Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn.
+        .section-about__clouds
+
+    section.grid-noGutter.section-projects.flex-center 
+        
+        .grid-center 
+            .col-6.align-center
+                h2.text-title-big.text-white What We Do
+
+        //- looping card projects
+        .grid-center
+            .col-8
+                .grid
+                    include components/cards/card-project.pug
+                    include components/cards/card-project.pug
+                    include components/cards/card-project.pug
+
+
+        //- wnd of looping card projects
