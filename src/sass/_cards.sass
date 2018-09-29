@@ -1,0 +1,35 @@
+@import "./_constants"
+  
+.card-project
+  padding: 10px
+  margin-bottom: 50px
+  .card-content__thumb
+    cursor: pointer
+    transition: background-size 2s ease-in
+    -moz-transition: background-size 2s ease-in
+    -ms-transition: background-size 2s ease-in
+    -o-transition: background-size 2s ease-in
+    -webkit-transition: background-size 2s ease-in
+    &:hover 
+      background-size: cover
+    position: relative 
+    background-size: contain
+    height: 200px
+    background-color: #191919
+    background-position: center
+    background-repeat: no-repeat
+    margin-bottom: 30px
+    img.card-content__thumb__logo
+      width: 70px
+      position: absolute
+      right: 0
+      bottom: -35px
+  .card-content__text 
+    color: $color-white-main
+    h3
+      font-size: 40px 
+      margin: 0
+    h4
+      font-size: 20px
+      margin: 0
+    

@@ -1,0 +1,39 @@
+// external
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@font-face
+    font-family: 'bebas-neue'
+    src: url("../libraries/bebas-neue/BebasNeue-Regular.otf")
+
+// internal
+@import "./_constants"
+@import "./_texts"
+@import "./_cards"
+@import "./_sections"
+// ref: https://stackoverflow.com/questions/7111610/import-regular-css-file-in-scss-file
+@import "../libraries/gridlex/gridlex.min.css"
+
+body, html 
+    font-family: muli
+    padding: 0
+    margin: 0
+nav, footer
+    padding: 10px
+    text-align: center
+nav
+    background: $color-primary-bg
+    text-transform: uppercase
+    font-weight: bold
+    color: $color-primary-text
+footer 
+    background: $color-dark-bg
+    color: $color-primary-text
+
+// global
+.align-center
+    text-align: center
+
+.flex-center 
+    display: flex
+    align-items: center
+    justify-content: center 
+        

@@ -1,0 +1,65 @@
+@import "./_constants"
+
+section .grid-center 
+  width: 100%
+
+.section-home
+  height: 100vh
+  color: $color-white-main
+  background-color: $color-blue-main
+  background-image: linear-gradient($color-blue-verydark, $color-blue-dark, $color-blue-main)
+  position: relative 
+
+  .section-home__clouds
+      position: absolute 
+      bottom: 0
+      width: 100%
+      height: 150px
+      background-size: cover
+      z-index: 10
+      background-image: url("/images/home-clouds.svg")
+      background-repeat: repeat-x   
+  .section-home__logo
+      width: 400px
+      img 
+          width: 100px
+          display: inline-block
+          vertical-align: top
+      .text 
+          width: 280px
+          padding-left: 20px
+          display: inline-block
+          font-family: muli
+          font-size: 20px
+          text-transform: uppercase
+          small 
+              font-size: 10px
+        
+        
+.section-about
+    padding: 150px 20px 250px
+    background: $color-white-main
+    position: relative
+    
+
+    h2.text-title-big
+        margin-bottom: 20px
+
+    h3.align-center.text-medium-gray 
+        margin: 0 auto
+        max-width: 600px
+    
+    .section-about__clouds
+        position: absolute 
+        bottom: 0
+        width: 100%
+        height: 150px
+        background-size: cover
+        z-index: 10
+        background-image: url("/images/home-clouds-blue.svg")
+        background-repeat: repeat-x 
+
+.section-projects
+    background-color: $color-blue-dark
+    padding: 150px 20px
+    background-image: linear-gradient($color-blue-dark, $color-blue-main)
