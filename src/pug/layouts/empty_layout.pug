@@ -2,15 +2,31 @@ doctype html
 html(lang='en')
     head
         title Id More - More Things Available
-        meta(description="Id More - More Things Available")
+        meta(description="Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn")
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible' content='IE=edge')
         meta(name='viewport' content='width=device-width, initial-scale=1')
         link(href="/css/style.css" rel="stylesheet")
         link(rel="icon" href="/images/project-idmoreacademy-logo.png")
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:image" content="https://res.cloudinary.com/dhjkktmal/image/upload/c_scale,w_800/v1538301459/github/Screen_Shot_2018-09-30_at_16.52.32.png"/>
+        <meta name="twitter:title" content="Id More - More Things Available"/>
+        <meta name="twitter:description" content="Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn" />
+        <meta property="og:title" content="Id More - More Things Available" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://byidmore.com" />
+        <meta property="og:image" content="https://res.cloudinary.com/dhjkktmal/image/upload/c_scale,w_800/v1538301459/github/Screen_Shot_2018-09-30_at_16.52.32.png" />
+        <meta property="og:description" content="Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn" />
     body
         
         block content
 
         script(src="js/app.js")
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-106471389-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-106471389-1');
+
         
