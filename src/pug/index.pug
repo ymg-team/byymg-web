@@ -37,8 +37,8 @@ block content
 
         //- looping card projects
         .grid-center
-            .col-8
-                .grid
+            .col-10
+                .grid-center
                     - 
                         var projects = [
                             {
@@ -86,8 +86,10 @@ block content
                                 logo: '/images/project-xiaomiverse-logo.png'
                             }
                         ]
-                    each n in projects
+                    each n, key in projects
                         + card-project(n)
+                        if key + 1 == 1 || (key + 1) & 2 != 0
+                            .col-1
 
         //- end of looping card projects
     .section-projects__border-bottom
