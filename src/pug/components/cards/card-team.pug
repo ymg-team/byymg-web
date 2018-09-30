@@ -1,0 +1,6 @@
+mixin card-team(n)
+  .col-4.card-team
+    a(href=n.link target="_blank")
+      img.card-team__avatar(src=n.avatar alt=n.name)
+      h3 #{n.name}
+      h4 #{n.position}

@@ -1,7 +1,11 @@
-.col-6_sm-12.card-project 
-  .card-content
-    .card-content__thumb(style="background-image: url('/images/project-kompetisiid.png')")
-      img.card-content__thumb__logo(src="/images/project-kompetisiid-logo.png")
-    .card-content__text
-      h3 Kompetisi Id 
-      h4 Indonesian Online Competition Platform
+mixin card-project(n)
+  .col-6_sm-12.card-project 
+    a(href=n.link target="_blank")
+      .card-content
+        .card-content__thumb(style="background-image: url("+n.thumb+")")
+          if n.cs 
+            span.card-content__commingsoon COMMING SOON
+          img.card-content__thumb__logo(src=n.logo)
+        .card-content__text
+          h3 #{n.title} 
+          h4 #{n.desc} 
