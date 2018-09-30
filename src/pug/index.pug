@@ -10,6 +10,7 @@ block content
             span.text Knowing is not enough, we must apply it. Willing is not enough, we must do.&nbsp;
                 small Johann Wolfgang von Goethe
         .section-home__clouds
+        img#the-rocket.section-home__therocket(src="/images/the-rocket.svg")
 
     section.grid-noGutter.section-about.flex-center
         .grid-center 
@@ -131,5 +132,18 @@ block content
             br
             | Web designed and builder by 
             a(href="https://yussan.github.io" target="_blank") yussan
+
+
+    script.
+        const RocketEl = document.getElementById("the-rocket");
+        window.addEventListener("scroll", function(e) {
+            const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+            const percentageRocket = scrollTop / window.innerHeight * 100;
+            if(percentageRocket <= 100) {
+                //- console.log(scrollTop, window.innerHeight, percentageRocket);
+                RocketEl.style.bottom = `${percentageRocket - 50}%`
+            }
+        })
+    
 
 
