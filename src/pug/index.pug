@@ -1,5 +1,8 @@
 extends layouts/empty_layout 
 
+include components/cards/card-project
+include components/cards/card-team
+
 block content 
     section.grid-noGutter.section-home.flex-center 
         .section-home__logo 
@@ -9,10 +12,21 @@ block content
         .section-home__clouds
 
     section.grid-noGutter.section-about.flex-center
-        h2.text-title-big.text-blue Who We Are
-        div(style="width:100%")
-            h3.align-center.text-medium-gray 
-                | Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn.
+        .grid-center 
+            .col-6.align-center
+                h2.text-title-big.text-blue Who We Are
+
+        .grid-center
+            .col-8
+                .grid
+                    .col
+                        div(style="width:100%")
+                            h3.align-center.text-medium-gray 
+                                | " Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn.
+                            br
+                            p.align-center.text-medium-gray  
+                                | Id More berawal dari tim mahasiswa yang sering mengikuti berbagai kompetisi tech product, Hackathon dan sejenisnya. Hingga akhirnya kami memutuskan membuat platform kompetisi online Indonesia, sekaligus sebagai produk Id More Pertama, hingga kemudian tercipta produk dan program-program lainnya.
+        
         .section-about__clouds
 
     section.grid-noGutter.section-projects.flex-center 
@@ -25,9 +39,95 @@ block content
         .grid-center
             .col-8
                 .grid
-                    include components/cards/card-project.pug
-                    include components/cards/card-project.pug
-                    include components/cards/card-project.pug
+                    - 
+                        var projects = [
+                            {
+                                title: 'Kompetisi Id',
+                                link: 'https://kompetisi.id',
+                                desc: 'Online Indonesian Competition Portal',
+                                thumb: '/images/project-kompetisiid.png',
+                                logo: '/images/project-kompetisiid-logo.png'
+                            },
+                            {
+                                title: 'Oopsreview',
+                                link: 'https://oopsreview.com',
+                                desc: 'Software Review Specialist',
+                                thumb: '/images/project-oopsreview.png',
+                                logo: '/images/project-oopsreview-logo.png'
+                            },
+                            {
+                                title: 'Id More Academy',
+                                link: 'https://www.youtube.com/channel/UCKLQUv8n3OadK5mkYpmZiyA',
+                                desc: 'Research and development together',
+                                thumb: '/images/project-idmoreacademy.png',
+                                logo: '/images/project-idmoreacademy-logo.png'
+                            },
+                            {
+                                title: 'Id More Academy Shop',
+                                link: 'https://www.tokopedia.com/idmore-academy',
+                                desc: 'Sell several books and stuff from Id More Academy',
+                                thumb: '/images/project-idmoreacademyshop.png',
+                                logo: '/images/project-idmoreacademy-logo.png'
+                            },
+                            {
+                                title: 'Doconfig',
+                                link: 'http://doconfig.netlify.com/',
+                                cs: true,
+                                desc: 'Create Config in Seconds',
+                                thumb: '/images/project-doconfig.png',
+                                logo: '/images/project-doconfig-logo.png'
+                            },
+                            {
+                                title: 'Xiaomiverse',
+                                link: 'https://xiaomiverse.com',
+                                cs: true,
+                                desc: 'Everything About Xiaomi',
+                                thumb: '',
+                                logo: '/images/project-xiaomiverse-logo.png'
+                            }
+                        ]
+                    each n in projects
+                        + card-project(n)
+
+        //- end of looping card projects
+    .section-projects__border-bottom
+
+    section.grid-noGutter.section-team.flex-center 
+        .grid-center 
+            .col-6.align-center
+                h2.text-title-big.text-blue The Team
+
+        //- looping card team
+        .grid-center
+            .col-8
+                .grid-center
+                    - 
+                        var team = [
+                            {
+                                name: 'Yusuf A.H.',
+                                position: 'Id More Founder | Web Engineer',
+                                link: 'https://yussan.github.io',
+                                avatar: '/images/home-team-yussan.png'
+                            },
+                            {
+                                name: 'M.S. Zuhri',
+                                position: 'Backend Engineer',
+                                link: 'https://twitter.com/dzhurey',
+                                avatar: 'https://pbs.twimg.com/profile_images/450647440710840322/R5NUIsIa_400x400.jpeg'
+                            }
+                        ]
+                    each n in team
+                        + card-team(n)
+        //- end of looping card team
 
 
-        //- wnd of looping card projects
+    footer.section-footer.flex-center 
+        p
+            | Thank you for your attention
+            br
+            | Copyright &copy; 2012 - 2018 Id More Team 
+            br
+            | Web designed and builder by 
+            a(href="https://yussan.github.io" target="_blank") yussan
+
+

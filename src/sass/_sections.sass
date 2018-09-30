@@ -25,6 +25,7 @@ section .grid-center
           width: 100px
           display: inline-block
           vertical-align: top
+          
       .text 
           width: 280px
           padding-left: 20px
@@ -43,9 +44,9 @@ section .grid-center
     
 
     h2.text-title-big
-        margin-bottom: 20px
+        margin-bottom: 40px
 
-    h3.align-center.text-medium-gray 
+    h3.align-center.text-medium-gray, p 
         margin: 0 auto
         max-width: 600px
     
@@ -61,5 +62,23 @@ section .grid-center
 
 .section-projects
     background-color: $color-blue-dark
-    padding: 150px 20px
+    padding: 150px 20px 0
     background-image: linear-gradient($color-blue-dark, $color-blue-main)
+    h2.text-title-big
+        margin-bottom: 40px
+.section-projects__border-bottom
+    background-image: linear-gradient($color-blue-main, $color-white-main)
+    height: 180px
+
+.section-team
+    background-color: $color-white-main
+    padding: 0 20px 150px
+    h2.text-title-big
+        margin-bottom: 40px
+
+.section-footer
+    background: $color-white-main
+    color: $color-gray-main 
+    padding: 20px 
+    a 
+        color: $color-blue-dark
