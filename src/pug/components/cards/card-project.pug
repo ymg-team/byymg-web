@@ -2,7 +2,9 @@ mixin card-project(n)
   .col-5_sm-12.card-project 
     a(href=n.link target="_blank")
       .card-content
-        .card-content__thumb(style="background-image: url("+n.thumb+")")
+        .card-content__thumb
+          .card-content__bg__container
+            img.card-content__thumb__image(src=n.thumb)
           if n.cs 
             span.card-content__commingsoon COMMING SOON
           img.card-content__thumb__logo(src=n.logo)
