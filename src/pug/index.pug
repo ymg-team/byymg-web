@@ -1,5 +1,6 @@
 extends layouts/empty_layout 
 
+include components/cards/card-former-team
 include components/cards/card-project
 include components/cards/card-team
 
@@ -126,6 +127,20 @@ block content
                                 link: 'https://yussan.github.io',
                                 avatar: '/images/home-team-yussan.png'
                             },
+                        ]
+                    each n in team
+                        + card-team(n)
+        //- end of looping card team
+        
+        .grid-center(style="margin-top:50px") 
+            .col-6.align-center
+                h3.text-title-small.text-blue Former Team
+
+        .grid-center
+            .col-8
+                .grid-center
+                    - 
+                        var formerteam = [
                             {
                                 name: 'M.S. Zuhri',
                                 position: 'Backend Engineer',
@@ -133,9 +148,8 @@ block content
                                 avatar: '/images/home-team-zuhri.png'
                             }
                         ]
-                    each n in team
-                        + card-team(n)
-        //- end of looping card team
+                    each n in formerteam
+                        + card-former-team(n)
 
 
     footer.section-footer.flex-center 

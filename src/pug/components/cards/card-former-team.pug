@@ -1,0 +1,6 @@
+mixin card-former-team(n)
+  .col-3.card-team
+    a(href=n.link target="_blank")
+      img.card-team__avatar-small(src=n.avatar alt=n.name style="filter: alpha(opacity=40);opacity: 0.4;background-color: #000;")
+      h3 #{n.name}
+      h4 #{n.position}
