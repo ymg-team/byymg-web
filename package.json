@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "byidmore-web",
   "description": "Byidmore.com website",
   "scripts": {
@@ -35,4 +36,26 @@
     "rimraf": "^2.6.3",
     "standard-version": "^4.2.0"
   }
+=======
+  "name": "byidmore.com",
+  "version": "1.0.0",
+  "description": "product made by idmore team",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/idmore/byidmore-web.git"
+  },
+  "keywords": [
+    "byidmore"
+  ],
+  "author": "yussan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/idmore/byidmore-web/issues"
+  },
+  "homepage": "https://gitlab.com/idmore/byidmore-web#README"
+>>>>>>> 8332f774f15d590048c9f54e21de3343df2ed139
 }
