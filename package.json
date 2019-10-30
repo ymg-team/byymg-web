@@ -1,5 +1,6 @@
 {
   "name": "byidmore-web",
+<<<<<<< HEAD
   "description": "Byidmore.com website",
   "scripts": {
     "start": "npm run build:dev",
@@ -8,12 +9,27 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "standard-version",
     "clear:build": "rimraf dist"
+=======
+  "version": "2.0.0",
+  "description": "https://byidmore.com web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 805a6cd36b17b39128c6d8c3391e8568ccbd95f6
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:yussan/grunt-pug-sass-boilerplate.git"
   },
+<<<<<<< HEAD
   "author": "",
+=======
+  "keywords": [
+    "byidmore",
+    "website"
+  ],
+  "author": "yussan",
+>>>>>>> 805a6cd36b17b39128c6d8c3391e8568ccbd95f6
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yussan/grunt-pug-sass-boilerplate/issues"
