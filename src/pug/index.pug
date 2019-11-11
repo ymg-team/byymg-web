@@ -28,11 +28,11 @@ block content
                             br
                             p.align-center.text-medium-gray  
                                 | Id More starts from a team of students who often participate in various tech product competitions, Hackathon and the like. Until finally we decided to create an Indonesian online competition platform, as well as the First Id More product, until later other products and programs were created.
-        
+
         .section-about__clouds
 
     section.grid-noGutter.section-projects.flex-center 
-        
+
         .grid-center 
             .col-6.align-center
                 h2.text-title-big.text-white What We Do
@@ -85,22 +85,15 @@ block content
                                 thumb: '/images/project-idmoreacademy.png',
                                 logo: '/images/project-idmoreacademy-logo.png'
                             },
-                            {
-                                title: 'Doconfig',
-                                link: 'http://doconfig.netlify.com/',
-                                cs: true,
-                                desc: 'Create Config in Seconds',
-                                thumb: '/images/project-doconfig.png',
-                                logo: '/images/project-doconfig-logo.png'
-                            },
-                            {
-                                title: 'Xiaomiverse',
-                                link: 'https://xiaomiverse.com',
-                                cs: true,
-                                desc: 'Everything About Xiaomi',
-                                thumb: '',
-                                logo: '/images/project-xiaomiverse-logo.png'
-                            }
+                            //- {
+                            //-     title: 'Doconfig',
+                            //-     link: 'http://doconfig.netlify.com/',
+                            //-     cs: true,
+                            //-     desc: 'Create Config in Seconds',
+                            //-     thumb: '/images/project-doconfig.png',
+                            //-     logo: '/images/project-doconfig-logo.png'
+                            //- }
+                            
                         ]
                     each n, key in projects
                         + card-project(n)
@@ -128,14 +121,20 @@ block content
                                 avatar: '/images/home-team-yussan.png'
                             },
                             {
+                                name: 'WildanZM',
+                                position: 'Web Front-end Engineer',
+                                link: 'https://github.com/zmwildan',
+                                avatar: '/images/home-team-wildanzm.jpg'
+                            },
+                            {
                                 name: 'Aab',
-                                position: 'Front-end Engineer',
+                                position: 'Web Front-end Engineer',
                                 link: 'https://github.com/Aab19',
                                 avatar: '/images/home-team-aab2.jpg'
                             },
                             {
                                 name: 'Sigit K.',
-                                position: 'Web Engineer',
+                                position: 'Web Full-stack Engineer',
                                 link: 'https://github.com/sgtkuncoro',
                                 avatar: '/images/home-team-sigitk.jpeg'
                             },
@@ -143,7 +142,7 @@ block content
                     each n in team
                         + card-team(n)
         //- end of looping card team
-        
+
         //- .grid-center(style="margin-top:80px") 
         //-     .col-6.align-center
         //-         h3.text-title-small.text-blue Former Team
@@ -208,6 +207,6 @@ block content
                 RocketEl.style.bottom = `${percentageRocket - 50}%`
             }
         })
-    
+
 
 
