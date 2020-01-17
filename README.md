@@ -1,8 +1,8 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-# byidmore.com
+# Yussan Media Group Web
 
-Source code of https://byidmore.com
+Source code of https://yussanmediagroup.org
 
 ![byidmore.com homepage](https://res.cloudinary.com/dhjkktmal/image/upload/v1538301459/github/Screen_Shot_2018-09-30_at_16.52.32.png)
 
@@ -20,12 +20,16 @@ or
 npm install
 ```
 
-## Development 
-Start watching with command 
+## Development
+
+Start watching with command
+
 ```
 yarn start
 ```
-or 
+
+or
+
 ```
 npm start
 ```
