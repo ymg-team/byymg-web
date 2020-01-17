@@ -7,7 +7,7 @@ include components/cards/card-team
 block content 
     section.grid-noGutter.section-home.flex-center 
         .section-home__logo 
-            img(src="/images/home-byidmore-transparent.png" alt="idmore white transparent logo")
+            img(src="/images/home-ymg-transparent.png" alt="Yussan Media Group white transparent logo")
             span.text Knowing is not enough, we must apply it. Willing is not enough, we must do.&nbsp;
                 small Johann Wolfgang von Goethe
         .section-home__clouds
@@ -27,7 +27,9 @@ block content
                                 | " Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn.
                             br
                             p.align-center.text-medium-gray  
-                                | Id More starts from a team of students who often participate in various tech product competitions, Hackathon and the like. Until finally we decided to create an Indonesian online competition platform, as well as the First Id More product, until later other products and programs were created.
+                                | Yussan Media Group (previously known as Id More) starts from a team of students who often participate in various tech product competitions, 
+                                | Hackathon and the like. Until finally we decided to create an Indonesian online competition platform, 
+                                | as well as the First Yussan Media Group product, until later other products and programs were created.
 
         .section-about__clouds
 
@@ -45,7 +47,7 @@ block content
                         var projects = [
                             {
                                 title: 'Mau Gowes on Youtube',
-                                link: 'https://youtube.com/gowes',
+                                link: 'https://youtube.com/maugowes',
                                 desc: 'Indonesia Cycling Online Platform',
                                 thumb: '/images/project-maugowes-youtube.jpg',
                                 logo: '/images/project-maugowes-logo.png'
@@ -58,18 +60,18 @@ block content
                                 logo: '/images/project-maugowes-logo.png'
                             },
                             {
-                                title: 'Id More Academy',
-                                link: 'https://academy.byidmore.com',
-                                desc: 'Id More RnD Team Open To The World',
-                                thumb: '/images/project-idmore-academy.jpg',
-                                logo: '/images/project-idmoreacademy-logo.png'
+                                title: 'Yussan Academy on Youtube',
+                                link: 'https://www.youtube.com/channel/UCKLQUv8n3OadK5mkYpmZiyA',
+                                desc: 'Tech from Engineer\'s Perspective',
+                                thumb: '/images/project-yussan-academy-youtube.jpg',
+                                logo: '/images/project-yussan-academy-logo.png'
                             },
                             {
-                                title: 'Kompetisi Id',
-                                link: 'https://kompetisi.id',
-                                desc: 'Online Indonesian Competition Portal',
-                                thumb: '/images/project-kompetisiid.jpg',
-                                logo: '/images/project-kompetisiid-logo.png'
+                                title: 'Yussan Academy',
+                                link: 'https://yussanacademy.com',
+                                desc: 'Tech from Engineer\'s Perspective',
+                                thumb: '/images/project-yussan-academy.jpg',
+                                logo: '/images/project-yussan-academy-logo.png'
                             },
                             {
                                 title: 'Oopsreview',
@@ -79,21 +81,12 @@ block content
                                 logo: '/images/project-oopsreview-logo.png'
                             },
                             {
-                                title: 'Id More Academy on Youtube',
-                                link: 'https://www.youtube.com/channel/UCKLQUv8n3OadK5mkYpmZiyA',
-                                desc: 'Research and development together',
-                                thumb: '/images/project-idmoreacademy.jpg',
-                                logo: '/images/project-idmoreacademy-logo.png'
+                                title: 'Kompetisi Id',
+                                link: 'https://kompetisi.id',
+                                desc: 'Online Indonesian Competition Portal',
+                                thumb: '/images/project-kompetisiid.jpg',
+                                logo: '/images/project-kompetisiid-logo.png'
                             },
-                            //- {
-                            //-     title: 'Doconfig',
-                            //-     link: 'http://doconfig.netlify.com/',
-                            //-     cs: true,
-                            //-     desc: 'Create Config in Seconds',
-                            //-     thumb: '/images/project-doconfig.png',
-                            //-     logo: '/images/project-doconfig-logo.png'
-                            //- }
-
                         ]
                     each n, key in projects
                         + card-project(n)
@@ -116,7 +109,7 @@ block content
                         var team = [
                             {
                                 name: 'Yusuf A.H.',
-                                position: 'Id More Founder | Research and Development',
+                                position: 'Yussan Media Group Founder | Research and Development',
                                 link: 'https://yussan.github.io',
                                 avatar: '/images/home-team-yussan.png'
                             },
@@ -128,22 +121,16 @@ block content
                             },
                             {
                                 name: 'Y. Candra A.N.',
-                                position: 'Content Creator of Id More Academy',
+                                position: 'Content Creator of Yussan Academy',
                                 link: 'https://github.com/yusufcandraarif',
                                 avatar: '/images/home-team-candra.jpg'
                             },
                             {
-                                name: 'WildanZM',
+                                name: 'Wildan Z.M.',
                                 position: 'Web Fullstack Engineer',
                                 link: 'https://github.com/zmwildan',
                                 avatar: '/images/home-team-wildanzm.jpg'
-                            },
-                            {
-                                name: 'Aab',
-                                position: 'Web Front-end Engineer',
-                                link: 'https://github.com/Aab19',
-                                avatar: '/images/home-team-aab2.jpg'
-                            },
+                            }
                         ]
                     each n in team
                         + card-team(n)
@@ -153,9 +140,9 @@ block content
         p
             | Thank you for your attention
             br
-            | Copyright &copy; 2012 - 2020 Id More Team 
+            | Copyright &copy; 2012 - 2020 Yussan Media Group
             br
-            | Web designed and builder by 
+            | Web designed and built by 
             a(href="https://yussan.github.io" target="_blank") yussan
 
 
