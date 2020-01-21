@@ -146,6 +146,8 @@ block content
             a(href="https://yussan.github.io" target="_blank") yussan
 
 
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-156579324-1")
+
     script.
         const RocketEl = document.getElementById("the-rocket");
         window.addEventListener("scroll", function(e) {
@@ -156,6 +158,12 @@ block content
                 RocketEl.style.bottom = `${percentageRocket - 50}%`
             }
         })
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156579324-1');
 
 
 
