@@ -6,58 +6,35 @@
   margin-bottom: 50px
   a
     text-decoration: none
-  .card-content__thumb
+  .card-content
     cursor: pointer
     position: relative
     background-size: contain
-    // height: 200px
     background-color: #191919
     background-position: center
     background-repeat: no-repeat
     margin-bottom: 30px
-    .card-content__bg__container
-      overflow: hidden
-      width: 100%
-      height: 100%
-      text-align: center
-      .card-content__thumb__image
-        width: 100%
-        transform: scale(1)
-        transition: transform 0.2s
-        -moz-transition: transform 0.2s
-        -ms-transition: transform 0.2s
-        -o-transition: transform 0.2s
-        -webkit-transition: transform 0.2s
-      &:hover .card-content__thumb__image
-        transform: scale(1.05)
-
-    .card-content__commingsoon
-      color: white
-      background: $color-red-main
-      padding: 10px
-      position: absolute
-      z-index: 20
-      border-radius: 5px
-      font-weight: bold
-      bottom: 10px
-      left: 10px
+    height: 300px
+    overflow-x: hidden
+    border-bottom: 10px solid #FFF
+    
     img.card-content__thumb__logo
-      width: 70px
-      position: absolute
+      width: 80px
       right: 0
-      bottom: -35px
-      border-radius: 70px
+      border-radius: 50%
       border: 3px solid #FFF
-  .card-content__text
-    color: $color-white-main
-    a
-      text-decoration: none
-    h3
-      font-size: 40px
-      margin: 0
-    h4
-      font-size: 20px
-      margin: 0
+      margin: 20px 20px 0
+    .card-content__text
+      padding: 20px
+      color: $color-white-main
+      a
+        text-decoration: none
+      h3
+        font-size: 35px;
+        margin: 0 0 5px;
+      h4
+        font-size: 20px
+        margin: 0
 
 // style of card avatar
 .card-team

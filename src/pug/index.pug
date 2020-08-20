@@ -46,66 +46,44 @@ block content
                     - 
                         var projects = [
                             {
-                                title: 'Mau Riding on Youtube',
-                                link: 'https://www.youtube.com/channel/UC_rJfEqXGAvA_MdIp6m_EeQ',
-                                desc: 'Mau Riding Motovlog',
-                                thumb: '/images/project-mauriding-youtube.jpg',
-                                logo: '/images/project-mauriding-logo.png'
+                                title: 'Mau Gowes',
+                                link: 'https://maugowes.com',
+                                desc: 'Indonesia Cycling Online Platform',
+                                logo: '/images/logo-maugowes.png'
                             },
                             {
                                 title: 'Mau Gowes on Youtube',
                                 link: 'https://youtube.com/maugowes',
-                                desc: 'Indonesia Cycling Online Platform',
-                                thumb: '/images/project-maugowes-youtube.jpg',
-                                logo: '/images/project-maugowes-logo.png'
+                                desc: 'Mau Gowes Youtube Channel',
+                                logo: '/images/logo-maugowes.png'
                             },
                             {
-                                title: 'Mau Gowes',
-                                link: 'https://maugowes.com',
-                                desc: 'Indonesia Cycling Online Platform',
-                                thumb: '/images/project-maugowes.jpg',
-                                logo: '/images/project-maugowes-logo.png'
+                                title: 'Mau Riding on Youtube',
+                                link: 'https://www.youtube.com/channel/UC_rJfEqXGAvA_MdIp6m_EeQ',
+                                desc: 'Mau Riding Motovlog on Youtube',
+                                logo: '/images/logo-mauriding.png'
                             },
                             {
-                                title: 'Mau Gowes Bike Shop on Tokopedia',
-                                link: 'https://www.tokopedia.com/maugowes',
-                                desc: 'Official Shop of Mau Gowes',
-                                thumb: '/images/project-maugowes-bike-shop.jpg',
-                                logo: '/images/project-maugowes-logo.png'
+                                title: 'Mau Coding',
+                                link: 'https://maucoding.com',
+                                desc: 'Tech from Engineer\'s Perspective',
+                                logo: '/images/logo-maucoding.png'
                             },
                             {
-                                title: 'Yussan Academy on Youtube',
+                                title: 'Mau Coding on Youtube',
                                 link: 'https://www.youtube.com/channel/UCKLQUv8n3OadK5mkYpmZiyA',
-                                desc: 'Tech from Engineer\'s Perspective',
-                                thumb: '/images/project-yussan-academy-youtube.jpg',
-                                logo: '/images/project-yussan-academy-logo.png'
-                            },
-                            {
-                                title: 'Yussan Academy',
-                                link: 'https://yussanacademy.com',
-                                desc: 'Tech from Engineer\'s Perspective',
-                                thumb: '/images/project-yussan-academy.jpg',
-                                logo: '/images/project-yussan-academy-logo.png'
-                            },
-                            {
-                                title: 'Oopsreview',
-                                link: 'https://oopsreview.com',
-                                desc: 'Software Review Specialist',
-                                thumb: '/images/project-oopsreview.jpg',
-                                logo: '/images/project-oopsreview-logo.png'
+                                desc: 'Mau Coding Youtube Channel',
+                                logo: '/images/logo-maucoding.png'
                             },
                             {
                                 title: 'Kompetisi Id',
                                 link: 'https://kompetisi.id',
                                 desc: 'Online Indonesian Competition Portal',
-                                thumb: '/images/project-kompetisiid.jpg',
                                 logo: '/images/project-kompetisiid-logo.png'
                             },
                         ]
                     each n, key in projects
                         + card-project(n)
-                        if key + 1 == 1 || (key + 1) & 2 != 0
-                            .col-1
 
         //- end of looping card projects
     .section-projects__border-bottom
@@ -117,13 +95,13 @@ block content
 
         //- looping card team
         .grid-center
-            .col-8_sm-12
+            .col-10_sm-12
                 .grid-center
                     - 
                         var team = [
                             {
                                 name: 'Yusuf A.H.',
-                                position: 'Yussan Media Group Founder | Research and Development',
+                                position: 'YMG Founder | Research and Development',
                                 link: 'https://yussan.github.io',
                                 avatar: '/images/home-team-yussan.png'
                             },
@@ -141,19 +119,19 @@ block content
                             },
                             {
                                 name: 'Mudawil Qulub',
-                                position: 'Content Creator of Mau Gowes',
+                                position: 'Content Creator of Mau Gowes and UI/UX Specialist',
                                 link: 'https://instagram.com/mudawil',
                                 avatar: '/images/home-team-qulub.jpg'
                             },
                             {
                                 name: 'Y. Candra A.N.',
-                                position: 'Content Creator of Yussan Academy',
+                                position: 'Content Creator of Mau Coding',
                                 link: 'https://github.com/yusufcandraarif',
                                 avatar: '/images/home-team-candra.jpg'
                             },
                             {
                                 name: 'Wildan Z.M.',
-                                position: 'Web Fullstack Engineer',
+                                position: 'Web Engineer',
                                 link: 'https://github.com/zmwildan',
                                 avatar: '/images/home-team-wildanzm.jpg'
                             }
