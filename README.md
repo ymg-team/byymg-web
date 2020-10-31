@@ -2,9 +2,9 @@
 
 # Yussan Media Group Web
 
-Source code of https://yussanmediagroup.org
+Source code of https://byymg.com
 
-![byidmore.com homepage](https://res.cloudinary.com/dhjkktmal/image/upload/v1538301459/github/Screen_Shot_2018-09-30_at_16.52.32.png)
+![byymg.com homepage](https://res.cloudinary.com/dhjkktmal/image/upload/v1538301459/github/Screen_Shot_2018-09-30_at_16.52.32.png)
 
 ## Instalation
 

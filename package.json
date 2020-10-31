@@ -1,6 +1,6 @@
 {
-  "name": "byidmore-web",
-  "description": "Byidmore.com website",
+  "name": "byymd-web",
+  "description": "byymg.com website",
   "scripts": {
     "start": "npm run build:dev",
     "build:dev": "npm run clear:build && grunt",
