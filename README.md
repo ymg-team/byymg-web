@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/af266804-94bb-4c52-a043-55e3d8d1f0fc/deploy-status)](https://app.netlify.com/sites/byymg/deploys)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # Yussan Media Group Web
