@@ -4,7 +4,9 @@
 
 Source code of https://byymg.com
 
-![byymg.com homepage](https://res.cloudinary.com/dhjkktmal/image/upload/v1538301459/github/Screen_Shot_2018-09-30_at_16.52.32.png)
+![byymg.com homepage](https://i.ibb.co/YLZkvbX/Screen-Shot-2020-11-15-at-09-41-45.png)
+
+![byymg.com sample page](https://i.ibb.co/WvqvX23/Screen-Shot-2020-11-15-at-09-41-57.png)
 
 ## Instalation
 
