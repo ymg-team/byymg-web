@@ -1,12 +1,12 @@
-extends layouts/empty_layout 
+extends layouts/empty_layout
 
 include components/cards/card-former-team
 include components/cards/card-project
 include components/cards/card-team
 
 block content 
-    section.grid-noGutter.section-home.flex-center 
-        .section-home__logo 
+    section.grid-noGutter.section-home.flex-center
+        .section-home__logo
             img(src="/images/YMG Square Logo - white transparent.png" alt="Yussan Media Group white transparent logo")
             span.text Knowing is not enough, we must apply it. Willing is not enough, we must do.&nbsp;
                 small Johann Wolfgang von Goethe
@@ -14,7 +14,7 @@ block content
         img#the-rocket.section-home__therocket(src="/images/the-rocket.svg")
 
     section.grid-noGutter.section-about.flex-center
-        .grid-center 
+        .grid-center
             .col-6_sm-12.align-center
                 h2.text-title-big.text-blue Who We Are
 
@@ -23,19 +23,19 @@ block content
                 .grid
                     .col
                         div(style="width:100%")
-                            h3.align-center.text-medium-gray 
+                            h3.align-center.text-medium-gray
                                 | " Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn.
                             br
-                            p.align-center.text-medium-gray  
+                            p.align-center.text-medium-gray
                                 | Yussan Media Group (previously known as Id More) starts from a team of students who often participate in various tech product competitions, 
                                 | Hackathon and the like. Until finally we decided to create an Indonesian online competition platform, 
                                 | as well as the First Yussan Media Group product, until later other products and programs were created.
 
         .section-about__clouds
 
-    section.grid-noGutter.section-projects.flex-center 
+    section.grid-noGutter.section-projects.flex-center
 
-        .grid-center 
+        .grid-center
             .col-6_sm-12.align-center
                 h2.text-title-big.text-white What We Do
 
@@ -43,59 +43,59 @@ block content
         .grid-center
             .col-10_sm-12
                 .grid-center
-                    - 
-                        var projects = [
-                            {
-                                title: 'Mau Traveling on Youtube',
-                                link: 'https://www.youtube.com/channel/UCxtDsEvvBxYxaBda7g2lZhA?view_as=subscriber',
-                                desc: 'Traveling Specialist',
-                                logo: '/images/logo-mautraveling.png'
-                            },
-                            {
-                                title: 'Mau Gowes',
-                                link: 'https://maugowes.com',
-                                desc: 'Indonesia Cycling Online Platform',
-                                logo: '/images/logo-maugowes.png'
-                            },
-                            {
-                                title: 'Mau Gowes on Youtube',
-                                link: 'https://youtube.com/maugowes',
-                                desc: 'Mau Gowes Youtube Channel',
-                                logo: '/images/logo-maugowes.png'
-                            },
-                            {
-                                title: 'Mau Riding on Youtube',
-                                link: 'https://www.youtube.com/channel/UC_rJfEqXGAvA_MdIp6m_EeQ',
-                                desc: 'Mau Riding Motovlog on Youtube',
-                                logo: '/images/logo-mauriding.png'
-                            },
-                            {
-                                title: 'Mau Coding',
-                                link: 'https://maucoding.com',
-                                desc: 'Tech from Engineer\'s Perspective',
-                                logo: '/images/logo-maucoding.png'
-                            },
-                            {
-                                title: 'Mau Coding on Youtube',
-                                link: 'https://www.youtube.com/channel/UCKLQUv8n3OadK5mkYpmZiyA',
-                                desc: 'Mau Coding Youtube Channel',
-                                logo: '/images/logo-maucoding.png'
-                            },
-                            {
-                                title: 'Kompetisi Id',
-                                link: 'https://kompetisi.id',
-                                desc: 'Online Indonesian Competition Portal',
-                                logo: '/images/project-kompetisiid-logo.png'
-                            },
-                        ]
-                    each n, key in projects
-                        + card-project(n)
+                 -
+                     var projects = [
+                         {
+                             title: 'Mau Gowes',
+                             link: 'https://maugowes.com',
+                             desc: 'Indonesia Cycling Online Platform',
+                             logo: '/images/logo-maugowes.png'
+                         },
+                         {
+                             title: 'Mau Gowes on Youtube',
+                             link: 'https://youtube.com/maugowes',
+                             desc: 'Mau Gowes Youtube Channel',
+                             logo: '/images/logo-maugowes.png'
+                         },
+                         {
+                             title: 'Kompetisi Id',
+                             link: 'https://kompetisi.id',
+                             desc: 'Online Indonesian Competition Portal',
+                             logo: '/images/project-kompetisiid-logo.png'
+                         },
+                         {
+                             title: 'Mau Coding on Youtube',
+                             link: 'https://youtube.com/maucoding',
+                             desc: 'Mau Coding Youtube Channel',
+                             logo: '/images/logo-maucoding.png'
+                         },
+                         {
+                             title: 'Mau Coding',
+                             link: 'https://maucoding.com',
+                             desc: 'Tech from Engineer\'s Perspective',
+                             logo: '/images/logo-maucoding.png'
+                         },
+                         {
+                             title: 'Mau Riding on Youtube',
+                             link: 'https://www.youtube.com/channel/UC_rJfEqXGAvA_MdIp6m_EeQ',
+                             desc: 'Mau Riding Motovlog on Youtube',
+                             logo: '/images/logo-mauriding.png'
+                         },
+                         {
+                             title: 'Mau Traveling on Youtube',
+                             link: 'https://www.youtube.com/channel/UCxtDsEvvBxYxaBda7g2lZhA?view_as=subscriber',
+                             desc: 'Traveling Specialist',
+                             logo: '/images/logo-mautraveling.png'
+                         }
+                     ]
+                 each n, key in projects
+                     + card-project(n)
 
         //- end of looping card projects
     .section-projects__border-bottom
 
-    section.grid-noGutter.section-team.flex-center 
-        .grid-center 
+    section.grid-noGutter.section-team.flex-center
+        .grid-center
             .col-6_sm-12.align-center
                 h2.text-title-big.text-blue The Team
 
@@ -103,50 +103,50 @@ block content
         .grid-center
             .col-10_sm-12
                 .grid-center
-                    - 
-                        var team = [
-                            {
-                                name: 'Yusuf A.H.',
-                                position: 'YMG Founder | Research and Development',
-                                link: 'https://yussan.github.io',
-                                avatar: '/images/home-team-yussan.png'
-                            },
-                            //- {
-                            //-     name: 'Erdisa N.',
-                            //-     position: 'Content Creator of Kompetisi Id',
-                            //-     link: 'https://www.linkedin.com/in/erdisa-nurmalia-556251187',
-                            //-     avatar: '/images/home-team-erdisa.jpeg'
-                            //- },
-                            //- {
-                            //-     name: 'Hananta D.K.',
-                            //-     position: 'Android Engineer of Kompetisi Id',
-                            //-     link: 'https://github.com/hdk24',
-                            //-     avatar: '/images/home-team-hananta2.jpeg'
-                            //- },
-                            //- {
-                            //-     name: 'Mudawil Qulub',
-                            //-     position: 'Content Creator of Mau Gowes and UI/UX Specialist',
-                            //-     link: 'https://instagram.com/mudawil',
-                            //-     avatar: '/images/home-team-qulub.jpg'
-                            //- },
-                            //- {
-                            //-     name: 'Y. Candra A.N.',
-                            //-     position: 'Content Creator of Mau Coding',
-                            //-     link: 'https://github.com/yusufcandraarif',
-                            //-     avatar: '/images/home-team-candra.jpg'
-                            //- },
-                            {
-                                name: 'Wildan Z.M.',
-                                position: 'Web Engineer',
-                                link: 'https://github.com/zmwildan',
-                                avatar: '/images/home-team-wildanzm.jpg'
-                            }
-                        ]
-                    each n in team
-                        + card-team(n)
+                 -
+                     var team = [
+                         {
+                             name: 'Yusuf A.H.',
+                             position: 'YMG Founder | Research and Development',
+                             link: 'https://yussan.github.io',
+                             avatar: '/images/home-team-yussan.png'
+                         },
+                         //- {
+                         //-     name: 'Erdisa N.',
+                         //-     position: 'Content Creator of Kompetisi Id',
+                         //-     link: 'https://www.linkedin.com/in/erdisa-nurmalia-556251187',
+                         //-     avatar: '/images/home-team-erdisa.jpeg'
+                         //- },
+                         //- {
+                         //-     name: 'Hananta D.K.',
+                         //-     position: 'Android Engineer of Kompetisi Id',
+                         //-     link: 'https://github.com/hdk24',
+                         //-     avatar: '/images/home-team-hananta2.jpeg'
+                         //- },
+                         //- {
+                         //-     name: 'Mudawil Qulub',
+                         //-     position: 'Content Creator of Mau Gowes and UI/UX Specialist',
+                         //-     link: 'https://instagram.com/mudawil',
+                         //-     avatar: '/images/home-team-qulub.jpg'
+                         //- },
+                         //- {
+                         //-     name: 'Y. Candra A.N.',
+                         //-     position: 'Content Creator of Mau Coding',
+                         //-     link: 'https://github.com/yusufcandraarif',
+                         //-     avatar: '/images/home-team-candra.jpg'
+                         //- },
+                         {
+                             name: 'Wildan Z.M.',
+                             position: 'Web Engineer',
+                             link: 'https://github.com/zmwildan',
+                             avatar: '/images/home-team-wildanzm.jpg'
+                         }
+                     ]
+                 each n in team
+                     + card-team(n)
         //- end of looping card team
 
-    footer.section-footer.flex-center 
+    footer.section-footer.flex-center
         p
             | Thank you for your attention
             br
@@ -159,21 +159,23 @@ block content
     script(async src="https://www.googletagmanager.com/gtag/js?id=UA-156579324-1")
 
     script.
-        const RocketEl = document.getElementById("the-rocket");
-        window.addEventListener("scroll", function(e) {
-            const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-            const percentageRocket = scrollTop / window.innerHeight * 100;
-            if(percentageRocket <= 100) {
-                //- console.log(scrollTop, window.innerHeight, percentageRocket);
-                RocketEl.style.bottom = `${percentageRocket - 50}%`
-            }
-        })
+     const RocketEl = document.getElementById("the-rocket");
+     window.addEventListener("scroll", function (e) {
+      const scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+      const percentageRocket = scrollTop / window.innerHeight * 100;
+      if (percentageRocket <= 100) {
+       //- console.log(scrollTop, window.innerHeight, percentageRocket);
+       RocketEl.style.bottom = `${percentageRocket - 50}%`
+      }
+     })
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+     window.dataLayer = window.dataLayer || [];
+     function gtag() {
+      dataLayer.push(arguments);
+     }
+     gtag('js', new Date());
 
-        gtag('config', 'UA-156579324-1');
+     gtag('config', 'UA-156579324-1');
 
 
 
