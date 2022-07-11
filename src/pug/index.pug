@@ -11,7 +11,7 @@ block content
             span.text Knowing is not enough, we must apply it. Willing is not enough, we must do.&nbsp;
                 small Johann Wolfgang von Goethe
         .section-home__clouds
-        img#the-rocket.section-home__therocket(src="/images/the-rocket.svg")
+        img#the-rocket.section-home__therocket.hide-mobile(src="/images/the-rocket.svg")
 
     section.grid-noGutter.section-about.flex-center
         .grid-center
@@ -24,7 +24,7 @@ block content
                     .col
                         div(style="width:100%")
                             h3.align-center.text-medium-gray
-                                | " Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn.
+                                | "Here we are not only focused on making tech products. But it also makes technology accessible, affordable and easy for everyone to learn.
                             br
                             p.align-center.text-medium-gray
                                 | Yussan Media Group (previously known as Id More) starts from a team of students who often participate in various tech product competitions, 
@@ -36,12 +36,12 @@ block content
     section.grid-noGutter.section-projects.flex-center
 
         .grid-center
-            .col-6_sm-12.align-center
+            .col-6_md-12_sm-12.align-center
                 h2.text-title-big.text-white What We Do
 
         //- looping card projects
         .grid-center
-            .col-10_sm-12
+            .col-10_md-12_sm-12
                 .grid-center
                  -
                      var projects = [
@@ -96,12 +96,12 @@ block content
 
     section.grid-noGutter.section-team.flex-center
         .grid-center
-            .col-6_sm-12.align-center
+            .col-6_md-12_sm-12.align-center
                 h2.text-title-big.text-blue The Team
 
         //- looping card team
         .grid-center
-            .col-10_sm-12
+            .col-10_md-12_sm-12
                 .grid-center
                  -
                      var team = [
@@ -135,12 +135,12 @@ block content
                          //-     link: 'https://github.com/yusufcandraarif',
                          //-     avatar: '/images/home-team-candra.jpg'
                          //- },
-                         {
-                             name: 'Wildan Z.M.',
-                             position: 'Web Engineer',
-                             link: 'https://github.com/zmwildan',
-                             avatar: '/images/home-team-wildanzm.jpg'
-                         }
+                        //-  {
+                        //-      name: 'Wildan Z.M.',
+                        //-      position: 'Web Engineer',
+                        //-      link: 'https://github.com/zmwildan',
+                        //-      avatar: '/images/home-team-wildanzm.jpg'
+                        //-  }
                      ]
                  each n in team
                      + card-team(n)

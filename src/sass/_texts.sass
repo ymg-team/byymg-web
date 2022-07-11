@@ -1,5 +1,5 @@
 @import "./_constants"
-  
+
 .text-title-big
   margin: 0
   font-size: 120px
@@ -21,8 +21,14 @@
   font-size: 20px
   font-family: muli
 
-.text-blue 
+.text-blue
   color: $color-blue-dark !important
 
 .text-white
   color: $color-white-main !important
+
+// mobile
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+  .text-title-big
+    font-size: 80px

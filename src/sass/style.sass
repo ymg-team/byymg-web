@@ -1,5 +1,5 @@
 // external
-@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Muli')
 @font-face
     font-family: 'bebas-neue'
     src: url("../libraries/bebas-neue/BebasNeue-Regular.otf")
@@ -12,7 +12,7 @@
 // ref: https://stackoverflow.com/questions/7111610/import-regular-css-file-in-scss-file
 @import "../libraries/gridlex/gridlex.min.css"
 
-body, html 
+body, html
     font-family: muli
     padding: 0
     margin: 0
@@ -24,7 +24,7 @@ nav
     text-transform: uppercase
     font-weight: bold
     color: $color-primary-text
-footer 
+footer
     background: $color-dark-bg
     color: $color-primary-text
 
@@ -32,11 +32,18 @@ footer
 .align-center
     text-align: center
 
-.flex-center 
+.flex-center
     display: flex
     align-items: center
-    justify-content: center 
+    justify-content: center
 
 .m-b-50
     margin-bottom: 50px
-        
+
+// responsiveness    
+
+// mobile
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+    .hide-mobile
+        display: none
