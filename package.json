@@ -37,6 +37,6 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "rimraf": "^2.6.3",
-    "standard-version": "^4.2.0"
+    "standard-version": "^8.0.1"
   }
 }
